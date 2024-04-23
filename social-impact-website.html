@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #FF5722;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        section {
+            padding: 40px 0;
+            background-color: #f9f9f9;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Climate Change Awareness</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#take-action">Take Action</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Join the Fight Against Climate Change</h2>
+            <p>Learn about the impacts of climate change and how you can make a difference.</p>
+            <a href="#take-action" class="cta-button">Take Action Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Climate Change</h2>
+            <p>Insert information about the causes and effects of climate change here.</p>
+        </div>
+    </section>
+
+    <section id="take-action">
+        <div class="container">
+            <h2>Take Action</h2>
+            <p>Here are some ways you can take action:</p>
+            <ul>
+                <li>Reduce, Reuse, Recycle</li>
+                <li>Conserve Energy</li>
+                <li>Support Renewable Energy</li>
+                <li>Advocate for Climate Policies</li>
+               
+            </ul>
+            <a href="#contact" class="cta-button">Get Involved</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or want to get involved? Contact us!</p>
+            <form action="submit.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Climate Change Awareness</p>
+    </footer>
+
+    <script>
+       
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
